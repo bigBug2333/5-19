@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        div {
+            width: 944px;
+            margin: 50px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="关灯"/>
+    <input type="button" value="开灯"/>
+    <div>
+        <img src="06.jpg" alt=""/>
+    </div>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $("input")[0].onclick = function(){
+                document.body.style.backgroundColor = "black";
+            }
+            $("input")[1].onclick = function(){
+                document.body.style.backgroundColor = "white";
+            }
+        });
+    </script>
+</body>
+</html>
